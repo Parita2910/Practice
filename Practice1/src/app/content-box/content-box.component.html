@@ -1,0 +1,15 @@
+<h3 class="title">
+    {{ cloth?.title }}
+</h3>
+<img (click)="imageClicked()" *ngIf="cloth?.Image" class="image" [src]="cloth?.Image">
+<p>
+    {{ cloth?.details }}
+</p>
+<div class="meta-data">
+    <div *ngIf="cloth?.Color" class="cloth?.Color">
+        {{ cloth?.Color }}
+    </div>
+    <div *ngIf="cloth?.Size">
+            #{{ cloth?.Size }}
+    </div>
+</div>
